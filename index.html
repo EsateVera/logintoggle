@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-in</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+  <header>
+    <h1 class="logo">Logo</h1>
+    <div class="sidebar" id="sideLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+      <nav class="navlinks">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+      <button class="btn">Login</button>
+    </nav>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+   
+    
+    
+  </header>
+
+  <div class="container">
+    <span class="icons-close">
+      <i class="fa fa-times"></i>
+    </span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icons"><i class="fa fa-envelope"></i></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icons">
+            <i class="fa fa-lock"></i>
+          </span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remeber-forget">
+          <label><input type="checkbox">Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <div class="btn-login">
+          <button type="submit">Login</button>
+        </div>
+        <div class="login-register">
+          <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icons"><i class="fa fa-user"></i></span>
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icons"><i class="fa fa-envelope"></i></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icons">
+            <i class="fa fa-lock"></i>
+          </span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remeber-forget">
+          <label><input type="checkbox">I agree to the Terms & Conditions</label>
+          
+        </div>
+        <div class="btn-login">
+          <button type="submit">Register</button>
+        </div>
+        <div class="login-register">
+          <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+   
